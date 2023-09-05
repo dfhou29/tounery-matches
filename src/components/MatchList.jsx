@@ -1,11 +1,22 @@
 import Match from './Match';
-import {matchData} from "../data/matchData";
+
 function MatchList(props) {
 
   return (
     <section className="PlayerList MatchList">
       <h1>Match list</h1>
-      <Match/>
+      {
+        props.matchData.map((match, index) => {
+          return (
+            <Match key={index}
+                   players={match.players}
+                   winner={match.winner}
+                   scoreDifference={match.scoreDifference}
+            />
+          );
+        })
+      }
+
     </section>
   )
 }
