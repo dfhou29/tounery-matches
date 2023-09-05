@@ -1,4 +1,4 @@
-export const playerData = {
+const playerData = {
   "Disguised Lizard": {
     gamerTag: "Disguised Lizard",
     firstName: "Daria ",
@@ -35,3 +35,5 @@ export const playerData = {
     lastName: "Herrera",
   }
 };
+
+export default playerData;
